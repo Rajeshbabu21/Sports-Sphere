@@ -1,0 +1,159 @@
+/* src/pages/CreateTeamPage.css */
+
+.create-team-page {
+  padding: 20px;
+  /* min-height: 100vh;  */
+  /* Ensures full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(135deg, #007bff, #0056b3); Attractive gradient */
+}
+
+.cen {
+  padding-top: 9rem; /* Reduced for better visual balance */
+}
+
+.create-team-page form {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px; /* Softer border radius */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Slightly elevated shadow */
+  width: 100%;
+  max-width: 500px;
+  /* animation: fadeIn 0.5s ease-in-out;  */
+}
+
+/* @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
+
+.h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.create-team-page label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+  font-size: 1rem;
+}
+
+.create-team-page input,
+.create-team-page select,
+.create-team-page textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.create-team-page input:focus,
+.create-team-page select:focus,
+.create-team-page textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.create-team-page textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.create-team-page button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.create-team-page button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+  /* transform: scale(1.05) */
+  ; /* Button grows slightly */
+}
+
+.create-team-page select {
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+.create-team-page option {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .create-team-page {
+    padding: 10px;
+  }
+
+  .create-team-page form {
+    padding: 20px;
+  }
+
+  .h1 {
+    font-size: 1.5rem;
+  }
+
+  .create-team-page input,
+  .create-team-page select,
+  .create-team-page textarea {
+    font-size: 0.9rem;
+  }
+
+  .create-team-page button {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-team-page {
+    padding: 5px;
+  }
+
+  
+
+  .create-team-page form {
+    padding: 15px;
+    /* max-width: 100px; */
+  }
+
+  .h1 {
+    font-size: 1.2rem;
+  }
+
+  .create-team-page input,
+  .create-team-page select,
+  .create-team-page textarea {
+    font-size: 0.85rem;
+  }
+
+  .create-team-page button {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+}

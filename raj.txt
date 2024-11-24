@@ -1,0 +1,144 @@
+// src/pages/CreateTeamPage.jsx
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import './CreateTeamPage.css'
+
+const CreateTeamPage = () => {
+  const [name, setName] = useState('')
+  const [gamePreferences, setGamePreferences] = useState('')
+  const navigate = useNavigate()
+
+  const handleCreateTeam = (e) => {
+    e.preventDefault() // Prevent form submission
+
+    const newTeam = { name, gamePreferences } // Create a new team object
+
+    // Retrieve existing teams from localStorage
+    const savedTeams = JSON.parse(localStorage.getItem('teams')) || []
+
+    // Add the new team to the existing list
+    savedTeams.push(newTeam)
+
+    // Save the updated teams list back to localStorage
+    localStorage.setItem('teams', JSON.stringify(savedTeams))
+
+    // Navigate back to the FindTeamPage
+    navigate('/')
+  }
+
+  return (
+    <div className='cen'>
+      <h1 className='h1'>Create a New Team</h1>
+      <div className='create-team-page'>
+        <form onSubmit={handleCreateTeam}>
+          <div>
+            <label>Team Name:</label>
+            <input
+              type='text'
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </div>
+
+          <div>
+            <label>Game Preferences:</label>
+            <select
+              value={gamePreferences}
+              onChange={(e) => setGamePreferences(e.target.value)}
+              required
+            >
+              <option value=''>Select Sport</option>
+              <option value='football'>Football</option>
+              <option value='volleyball'>Volleyball</option>
+              <option value='handball'>Handball</option>
+              <option value='chess'>Chess</option>
+              <option value='cricket'>Cricket</option>
+              <option value='carrom'>Carrom</option>
+            </select>
+          </div>
+
+          <button type='submit'>Submit</button>
+        </form>
+      </div>
+    </div>
+  )
+}
+
+export default CreateTeamPage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// src/pages/FindTeamPage.jsx
+import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+import TeamList from '../Team/TeamList'
+import './FindTeamPage.css'
+
+const FindTeamPage = () => {
+  const [teams, setTeams] = useState([]) // State to hold the list of teams
+  const [searchQuery, setSearchQuery] = useState('') // State for the search query
+  const navigate = useNavigate()
+
+  // Load the teams from localStorage when the page loads
+  useEffect(() => {
+    const savedTeams = JSON.parse(localStorage.getItem('teams')) || []
+    setTeams(savedTeams)
+  }, []) // This effect runs only once when the component mounts
+
+  // Handle search input change
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value)
+  }
+
+  // Filter teams based on the search query
+  const filteredTeams = teams.filter((team) => {
+    return (
+      team.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      team.gamePreferences.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  })
+
+  const handleCreateTeamClick = () => {
+    navigate('/create-team')
+  }
+
+  return (
+    <div className='find-team-page'>
+      <h1>Find Team</h1>
+      {/* Search Bar */}
+      <div className='search-bar-container'>
+        <input
+          type='text'
+          placeholder='Search teams...'
+          value={searchQuery}
+          onChange={handleSearchChange}
+        />
+        {/* You can add an icon inside the input, if you want */}
+        <i className='search-bar-icon fas fa-search'></i>
+      </div>
+      <button onClick={handleCreateTeamClick}>Create Team</button>
+      <h2>Created Teams</h2>
+      <TeamList teams={filteredTeams} />{' '}
+      {/* Display the filtered list of teams */}
+    </div>
+  )
+}
+
+export default FindTeamPage

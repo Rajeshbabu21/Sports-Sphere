@@ -1,0 +1,125 @@
+.find-team-page{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+
+}
+
+.team-list {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Create responsive grid layout */
+  gap: 20px; /* Add space between items */
+  justify-items: center; /* Center each team item */
+  align-items: start; /* Align items to the top */
+}
+
+.team-item {
+  background-color: #fff;
+  width: 100%; /* Take full width of grid column */
+  max-width: 400px; /* Limit maximum width */
+  padding: 20px; /* Add more padding */
+  margin: 0; /* Remove default margin */
+  border-radius: 12px; /* Make corners more rounded */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow for a card-like effect */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-item:hover {
+  transform: translateY(-5px); /* Lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.team-item h3 {
+  margin: 0;
+  color: #333;
+  font-size: 24px; /* Larger font size */
+  margin-bottom: 25px; /* Add space below heading */
+  text-align: center; /* Center align heading */
+}
+
+.team-item p {
+  color: #555;
+  font-size: 18px; /* Slightly larger font size */
+  margin: 10px 0; /* Add vertical space */
+  text-align: center; /* Center align text */
+}
+
+.team-item button {
+  padding: 12px 20px; /* Increase button padding */
+  background-color: #007bff; /* Match main theme color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px; /* Larger font size */
+  align-self: center; /* Center button */
+  margin-top: 15px; /* Add space above button */
+}
+
+.team-item button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+.raj {
+  padding: 12px 24px; 
+  margin-left: 45%;
+  background-color: #28a745; 
+  color: white; 
+  border: none; 
+  border-radius: 8px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  /* text-align: center;  */
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 20px;
+}
+
+.raj:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.raj:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.6); /* Add focus outline with green shadow */
+}
+
+.raj:active {
+  transform: scale(0.98); /* Shrink the button on click */
+}
+
+
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 90px; /* Space below the search bar */
+}
+
+.search-bar-container input {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 19px;
+  border: 3px solid #ccc;
+  width: 100%; /* Take full width of the parent container */
+  max-width: 700px; /* Limit the width of the search bar */
+  margin-right: 10px; /* Space between input and icon */
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.search-bar-container input:focus {
+  border-color: #007bff; /* Change border color when focused */
+}
+
