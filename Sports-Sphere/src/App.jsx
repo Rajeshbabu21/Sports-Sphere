@@ -18,6 +18,7 @@ import Cricket from './Pages/Cricket/Cricket'
 import Handball from './Pages/Handball/Handball'
 import Volleyball from './Pages/Volleyball/Volleyball'
 import Carrom from './Pages/Carrom/Carrom'
+import User from "./Pages/UserProfile/User"
 
 const theme = createTheme()
 

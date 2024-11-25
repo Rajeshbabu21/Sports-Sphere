@@ -1,0 +1,92 @@
+/* Main Page Layout */
+.messages-page {
+  display: flex;
+  background-color: black;
+  height: 80vh;
+  background-color: #f8f9fa; /* Light grey background */
+  padding-top: 10rem;
+  margin-left:115px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 25%;
+  /* background-color: #ffffff; */
+  background-color: rgb(206, 197, 197);
+  border-right: 1px solid #dee2e6;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-header h2 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.btn-new-message {
+  background-color: #0d6efd; /* Bootstrap primary color */
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.btn-new-message:hover {
+  background-color: #0056b3;
+}
+
+.sidebar-search {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Chat Area Styles */
+.chat-area {
+  /* flex-grow: 1; */
+  width: 65%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* row-gap: 20px; */
+  margin-left: 20px;
+  border-radius: 1rem;
+}
+
+.chat-placeholder {
+  text-align: center;
+  color: #6c757d; /* Bootstrap secondary color */
+}
+
+.chat-placeholder .chat-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #6c757d;
+}
+
+.chat-placeholder p {
+  font-size: 1rem;
+  margin: 0;
+}
