@@ -46,7 +46,7 @@ const Navbar = () => {
                 strokeLinecap='round'
                 strokeLinejoin='round'
                 strokeWidth={2}
-                d='M6 18L18 6M6 6l12 12'
+                // d='M6 18L18 6M6 6l12 12'
               />
             </svg>
           ) : (
@@ -92,51 +92,18 @@ const Navbar = () => {
           </div>
 
           {/* User Menu Button */}
+          <Link to='/user' className='hover:text-gray-300'>
           <div className='relative'>
             <button
-              onClick={() => toggleDropdown(0)}
+              // onClick={() => toggleDropdown(0)}
               className='flex items-center text-sm focus:outline-none'
             >
               {/* ccbc */}
-              <img
-                className='w-10 h-10 rounded-full'
-                src={ {profileImage }}
-                alt='User'
-              />
+              <img className='w-10 h-10 rounded-full' src={{profileImage}} alt="User" />
             </button>
 
-            {/* Dropdown Menu */}
-            {openDropdownIndex === 0 && (
-              <div className='absolute right-0 my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600 w-60'>
-                <ul className='py-2'>
-                  <li>
-                    <Link
-                      to='/profile'
-                      className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white text-center'
-                    >
-                      User's Name
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to='/profile/update'
-                      className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white text-center'
-                    >
-                      Update Profile
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to='/settings'
-                      className='block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white text-center'
-                    >
-                      Settings
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            )}
           </div>
+          </Link>
 
           <Link to='/logout' className='hover:text-gray-300'>
             Logout

@@ -62,7 +62,7 @@ function App() {
             path='/create-team'
             element={
               <>
-              <Navbar />
+                <Navbar />
                 <CreateTeamPage />
                 {/* <Message /> */}
               </>
@@ -92,6 +92,16 @@ function App() {
               <>
                 <Navbar />
                 <Message />
+              </>
+            }
+          />
+
+          <Route
+            path='/user'
+            element={
+              <>
+                <Navbar />
+                <User />
               </>
             }
           />

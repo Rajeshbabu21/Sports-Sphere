@@ -1,11 +1,11 @@
 import React from 'react'
 import './Dashboard.css' // Assuming styles are in a separate CSS file
 
-const Dashboard = () => {
+const Schedule = () => {
   return (
     <div className='dashboard-container'>
       {/* Sidebar Section */}
-      <div className='sidebar'>
+      <div className='sidebar-1'>
         {/* Filters Section */}
         <div className='filters-section'>
           <h3>Filters</h3>
@@ -56,4 +56,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default Schedule

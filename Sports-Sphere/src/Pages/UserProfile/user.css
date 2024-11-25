@@ -1,0 +1,143 @@
+/* Container */
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-top: 150px;
+}
+
+/* Profile Picture Section */
+.profile-picture-section {
+  flex: 1;
+  max-width: 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-picture {
+  margin-bottom: 20px;
+}
+
+.loading-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* margin-right: 70px; */
+}
+
+.loading-spinner {
+  font-size: 14px;
+  color: #999;
+}
+
+.online-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Profile Information Section */
+.profile-information-section {
+  flex: 2;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.profile-information-section h3 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+.add-interest-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-interest-btn:hover {
+  background-color: #0056b3;
+}
+
+.save-changes-btn {
+  display: block;
+  width: 100%;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.save-changes-btn:hover {
+  background-color: #218838;
+}
+
+/* Privacy Settings Section */
+.privacy-settings-section {
+  flex: 1;
+  max-width: 300px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.privacy-settings-section h3 {
+  margin-bottom: 20px;
+}
+
+.privacy-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.privacy-option input {
+  margin-right: 10px;
+}
+
+.ram{
+ width: 100px;
+ margin-left: 75px;
+}
