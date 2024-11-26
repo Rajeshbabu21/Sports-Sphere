@@ -16,6 +16,7 @@ function ImagePage() {
         alignItems: 'center',
         justifyContent: 'center',
         textAlign: 'center',
+        background: 'rgb(11 17 32)',
       }}
     >
       <Box
@@ -23,10 +24,10 @@ function ImagePage() {
         src={logoImage}
         alt='Centered Image'
         sx={{
-          width: 200, 
-          height: 200, 
+          width: 200,
+          height: 200,
           mb: 3,
-          border: '2px solid black', 
+          border: '2px solid black',
         }}
       />
       <Typography variant='h4' gutterBottom>
@@ -37,7 +38,7 @@ function ImagePage() {
           variant='contained'
           color='primary'
           onClick={() => navigate('/login')}
-          sx={{ mb: 3, width: '100%',borderRadius:'3' }}
+          sx={{ mb: 3, width: '100%', borderRadius: '3' }}
         >
           Login
         </Button>

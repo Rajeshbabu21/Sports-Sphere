@@ -13,6 +13,8 @@ import { Google as GoogleIcon } from '@mui/icons-material'
 import { useNavigate } from 'react-router-dom'
 
 function LoginForm() {
+
+
   // State management for form inputs
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -53,14 +55,16 @@ function LoginForm() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent:'center',
+        justifyContent: 'center',
         maxWidth: 400,
         mx: 'auto',
         mt: 10,
         p: 3,
-        border: '1px solid #ddd',
+        // border: '1px solid #ddd',
         borderRadius: 2,
         boxShadow: 3,
+        // background: 'rgb(11 17 32)',
+        backgroundColor: 'rgb(11, 17, 32)', // Background color added here
       }}
     >
       {/* Title */}
@@ -120,7 +124,7 @@ function LoginForm() {
         onClick={handleForgotPassword}
         sx={{
           fontSize: '0.9rem',
-          color: 'primary.main',
+          color: 'rgb(56,186,244)',
           textDecoration: 'underline',
           mb: 2,
         }}
@@ -149,7 +153,10 @@ function LoginForm() {
         <Link
           href='#'
           onClick={handleSignUp}
-          sx={{ color: 'primary.main', textDecoration: 'underline' }}
+          sx={{
+            color: 'rgb(56,186,244)',
+            textDecoration: 'underline',
+          }}
         >
           Sign Up
         </Link>

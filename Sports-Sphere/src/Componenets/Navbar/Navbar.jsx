@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from "../../assets/logo.jpg"
+// import "./navbar.css"
 // import User from "../../assets/"
 import profileImage from '../../assets/user.jpg'
 const Navbar = () => {
@@ -16,7 +17,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='w-full fixed top-0 left-0 z-50 bg-gray-800 text-white p-7'>
+    <div className='w-full fixed top-0 left-0 z-50 bg-darkGray text-white p-5 '>
       <nav className='flex justify-between items-center'>
         {/* Logo and Title Section */}
         <div className='flex items-center'>
@@ -25,7 +26,9 @@ const Navbar = () => {
             alt='Logo'
             className='h-[60px] w-[60px] mr-3 rounded-full'
           />
-          <span className='font-bold text-xl'>Sports Sphere</span>
+          <span className='font-bold text-xl text-[rgb(203,153,81)]'>
+            Sports Sphere
+          </span>
         </div>
 
         {/* Hamburger Icon for Mobile */}
@@ -69,16 +72,16 @@ const Navbar = () => {
 
         {/* Desktop Menu Links, Search Bar, and User Menu */}
         <div className={`hidden md:flex items-center space-x-10`}>
-          <Link to='/team' className='hover:text-gray-300'>
+          <Link to='/team' className='hover:text-[rgb(56,186,244)]'>
             Team
           </Link>
-          <Link to='/schedule' className='hover:text-gray-300'>
+          <Link to='/schedule' className='hover:text-[rgb(56,186,244)]'>
             Schedule
           </Link>
-          <Link to='/message' className='hover:text-gray-300'>
+          <Link to='/message' className='hover:text-[rgb(56,186,244)]'>
             Message
           </Link>
-          <Link to='/gallery' className='hover:text-gray-300'>
+          <Link to='/gallery' className='hover:text-[rgb(56,186,244)]'>
             Gallery
           </Link>
 
@@ -93,19 +96,22 @@ const Navbar = () => {
 
           {/* User Menu Button */}
           <Link to='/user' className='hover:text-gray-300'>
-          <div className='relative'>
-            <button
-              // onClick={() => toggleDropdown(0)}
-              className='flex items-center text-sm focus:outline-none'
-            >
-              {/* ccbc */}
-              <img className='w-10 h-10 rounded-full' src={{profileImage}} alt="User" />
-            </button>
-
-          </div>
+            <div className='relative'>
+              <button
+                // onClick={() => toggleDropdown(0)}
+                className='flex items-center text-sm focus:outline-none'
+              >
+                {/* ccbc */}
+                <img
+                  className='w-10 h-10 rounded-full'
+                  src={{ profileImage }}
+                  alt='User'
+                />
+              </button>
+            </div>
           </Link>
 
-          <Link to='/logout' className='hover:text-gray-300'>
+          <Link to='/logout' className='hover:text-[rgb(56,186,244)]'>
             Logout
           </Link>
         </div>

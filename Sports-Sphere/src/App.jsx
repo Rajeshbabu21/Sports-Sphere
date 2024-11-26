@@ -19,6 +19,8 @@ import Handball from './Pages/Handball/Handball'
 import Volleyball from './Pages/Volleyball/Volleyball'
 import Carrom from './Pages/Carrom/Carrom'
 import User from "./Pages/UserProfile/User"
+// import Footer from "./Componenets/Navbar/Footer"
+import './App.css'
 
 const theme = createTheme()
 
@@ -45,6 +47,7 @@ function App() {
               <>
                 <Navbar />
                 <MainContent />
+                {/* <Footer /> */}
               </>
             }
           />
@@ -54,6 +57,7 @@ function App() {
               <>
                 <Navbar />
                 <Team />
+                {/* <Footer /> */}
               </>
             }
           />
@@ -65,6 +69,7 @@ function App() {
                 <Navbar />
                 <CreateTeamPage />
                 {/* <Message /> */}
+                {/* <Footer /> */}
               </>
             }
           />
@@ -74,6 +79,7 @@ function App() {
               <>
                 <Navbar />
                 <Gallery />
+                {/* <Footer /> */}
               </>
             }
           />
@@ -83,6 +89,7 @@ function App() {
               <>
                 <Navbar />
                 <Schedule />
+                {/* <Footer /> */}
               </>
             }
           />
@@ -92,6 +99,7 @@ function App() {
               <>
                 <Navbar />
                 <Message />
+                {/* <Footer /> */}
               </>
             }
           />
@@ -102,6 +110,7 @@ function App() {
               <>
                 <Navbar />
                 <User />
+                {/* <Footer /> */}
               </>
             }
           />
