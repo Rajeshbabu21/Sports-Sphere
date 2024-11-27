@@ -30,7 +30,14 @@ function ImagePage() {
           border: '2px solid black',
         }}
       />
-      <Typography variant='h4' gutterBottom>
+      <Typography
+        variant='h4'
+        sx={{
+          mb:'4',
+           color: 'rgb(56, 186, 244)'
+         }} // Adding the color here
+        gutterBottom
+      >
         Welcome to the Home Page
       </Typography>
       <Container maxWidth='xs' sx={{ textAlign: 'center' }}>

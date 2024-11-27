@@ -46,9 +46,16 @@ function SignUpForm() {
         maxWidth: 400,
         mx: 'auto',
         mt: 17,
+        // overflowY: 'hidden',
+         // Prevent vertical scroll
+        // height: '100vh',
+         // Set container height to viewport height
         p: 3,
-        border: '1px solid #ddd',
+        // px:5,
+        // pt:10,
+        // border: '1px solid #ddd',
         borderRadius: 2,
+        backgroundColor: 'white',
         boxShadow: 3,
       }}
     >

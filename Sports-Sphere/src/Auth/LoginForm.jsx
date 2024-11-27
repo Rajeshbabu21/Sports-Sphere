@@ -64,7 +64,7 @@ function LoginForm() {
         borderRadius: 2,
         boxShadow: 3,
         // background: 'rgb(11 17 32)',
-        backgroundColor: 'rgb(11, 17, 32)', // Background color added here
+        backgroundColor: 'white', // Background color added here
       }}
     >
       {/* Title */}

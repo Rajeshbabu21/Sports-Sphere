@@ -8,7 +8,9 @@ export default {
         darkGray: 'rgb(11 17 32)',
         card: 'hsl(240deg 2.94% 13.33%)',
         cardover: 'rgb(56 186 244)',
-        customColor: 'rgb(203, 153, 81)', // Add your custom color
+        customColor: 'rgb(203, 153, 81)',
+        customColor2: 'rgb(233, 183, 131)',
+         // Add your custom color
       },
     },
   },

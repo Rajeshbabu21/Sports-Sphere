@@ -7,17 +7,17 @@
   /* margin-top: 150px; */
   /* height: 100vh; */
   /* margin-top: 190px; */
-  padding-top: 170px;
+  padding-top: 150px;
   overflow: hidden;
   /* background-color:#000B58; */
-  margin-left: 80px;
-  margin-right: 80px;
-  column-gap: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+  column-gap: 40px;
 }
 
 /* Sidebar Section */
 .sidebar-1 {
-  width: 400px;
+  width: 450px;
   /* background-color: white; */
   /* background-color: ; */
   background-color: rgb(11 17 32);
@@ -45,14 +45,15 @@
   margin-bottom: 5px;
   font-weight: bold;
   color: white;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 label {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: white;
+  font-size: 1rem;
 }
 
 input[type="checkbox"] {
@@ -62,7 +63,7 @@ input[type="checkbox"] {
 /* Quick Add Section */
 .quick-add-btn {
   display: block;
-  width: 100%;
+  width: 70%;
   padding: 10px;
   margin-bottom: 10px;
   border: none;
@@ -71,34 +72,50 @@ input[type="checkbox"] {
   font-weight: bold;
   color: white;
   cursor: pointer;
-  text-align: left;
+  text-align: center;
+  margin-left: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
-.match-btn {
-  /* background-color: #007bff; */
-  background-color: hsl(240deg 2.94% 13.33%);
-  /* background-color: hsl(240deg 2.94% 13.33%); */
-  border: 1px solid rgb(56 186 244);
 
+.match-btn {
+  background-color: hsl(240deg 2.94% 13.33%);
+  border: 1px solid rgb(56 186 244);
+  transition: background-color 0.3s ease, transform 0.3s ease; 
   margin-top: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 
 .practice-btn {
-  margin-bottom: 20px;
-    background-color: hsl(240deg 2.94% 13.33%);
+  /* transition: background-color 0.3s ease, transform 0.3s ease;  */
+  margin-bottom: 25px;
+  background-color: hsl(240deg 2.94% 13.33%);
+  border: 1px solid rgb(56 186 244);
   /* background-color: #17a2b8; */
 }
+
+.practice-btn :hover{
+  /* transform: scale(1.05); */
+         
+  background-color:rgb(56 186 244) ;
+    transform: scale(1.05);
+}
+
+
+
 
 .meeting-btn {
   /* background-color: #28a745; */
     background-color: hsl(240deg 2.94% 13.33%);
-  margin-bottom: 20px;
+    border: 1px solid rgb(56 186 244);
+  margin-bottom: 25px;
 }
 
 .quick-add-btn:hover {
-  opacity: 0.9;
+  /* opacity: 0.9; */
+  background-color: rgb(56 186 244);
+  transform: scale(1.05);
 }
 
 /* Schedule View Section */

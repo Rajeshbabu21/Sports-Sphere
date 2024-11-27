@@ -17,7 +17,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='w-full fixed top-0 left-0 z-50 bg-darkGray text-white p-5 '>
+    <div className='w-full fixed top-0 left-0 z-50 bg-darkGray text-white p-5 border-b-[1px] border-customColor '>
       <nav className='flex justify-between items-center'>
         {/* Logo and Title Section */}
         <div className='flex items-center'>
