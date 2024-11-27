@@ -35,7 +35,7 @@ body{
   transition: transform 0.3s ease-in-out; /* Smooth transition */
 }
 .column img:hover {
-  transform: scale(1.1); /* Scales the image down to 90% of its size */
+  transform: scale(1.5); /* Scales the image down to 90% of its size */
   
 }
 
