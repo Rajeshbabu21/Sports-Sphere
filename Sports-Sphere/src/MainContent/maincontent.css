@@ -1,10 +1,28 @@
 .head{
  font-family: ' ,Nova Square', sans-serif;
- color: white;
+ color: ;
 
 
 }
 
 h3{
  color: rgb(203, 153, 81);
+}
+
+.card {
+  transform: scale(1); /* Default scale */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Zoom in slightly */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Add shadow for effect */
+}
+
+.card img {
+  transition: opacity 0.3s ease;
+}
+
+.card img:hover {
+  opacity: 0.9; /* Slight fade effect */
 }

@@ -14,7 +14,7 @@
   flex: 1;
   max-width: 300px;
   background: rgb(11 17 32);
-  border: 1px solid rgb(203, 153, 81);
+  /* border: 1px solid rgb(203, 153, 81); */
   border-radius: 8px;
   padding: 20px;
   text-align: center;
@@ -50,7 +50,7 @@
 .profile-information-section {
   flex: 2;
   background: rgb(11 17 32);
-  border: 1px solid rgb(203, 153, 81);
+  /* border: 1px solid rgb(203, 153, 81); */
   border-radius: 8px;
   padding: 20px;
 }
@@ -127,7 +127,7 @@ textarea {
   flex: 1;
   max-width: 300px;
   background: rgb(11 17 32);
-  border: 1px solid rgb(203, 153, 81);
+  /* border: 1px solid rgb(203, 153, 81); */
   border-radius: 8px;
   padding: 20px;
 }

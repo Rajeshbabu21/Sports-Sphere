@@ -31,11 +31,10 @@ function LoginForm() {
     // Add login logic here (e.g., API call)
     navigate('/maincontent')
   }
+const handleForgotPassword = () => {
+  navigate('/forgot-password') // Redirect to the Forget Password page
+}
 
-  const handleForgotPassword = () => {
-    console.log('Forgot Password clicked')
-    // Add forgot password functionality
-  }
 
   const handleGoogleLogin = () => {
     console.log('Continue with Google clicked')
@@ -104,7 +103,7 @@ function LoginForm() {
           />
         }
         label='Remember Me'
-        sx={{ alignSelf: 'flex-start', mb: 2 }}
+        sx={{ alignSelf: 'flex-start', mb: 2, color: 'gray' }}
       />
 
       {/* Login Button */}
@@ -142,7 +141,7 @@ function LoginForm() {
         fullWidth
         onClick={handleGoogleLogin}
         startIcon={<GoogleIcon />}
-        sx={{ mb: 2 }}
+        sx={{ mb: 2 , color:'gray'}}
       >
         Continue with Google
       </Button>

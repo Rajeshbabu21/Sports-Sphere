@@ -45,7 +45,7 @@ function ImagePage() {
           variant='contained'
           color='primary'
           onClick={() => navigate('/login')}
-          sx={{ mb: 3, width: '100%', borderRadius: '3' }}
+          sx={{ mb: 4, width: '100%', borderRadius: '3' }}
         >
           Login
         </Button>
@@ -53,7 +53,7 @@ function ImagePage() {
           variant='outlined'
           color='primary'
           onClick={() => navigate('/signup')}
-          sx={{ width: '100%' }}
+          sx={{ width: '100%',color:'white' }}
         >
           Sign Up
         </Button>

@@ -26,7 +26,7 @@ function SignUpForm() {
     console.log('Signing up with:', { email, password })
 
     // Redirect to the profile creation page
-    navigate('/create-profile')
+    navigate('/maincontent')
   }
 
   // Handle Google Sign-In logic

@@ -1,10 +1,10 @@
 import React from 'react'
+import { Clipboard, PlusCircle,Presentation  } from 'lucide-react' // Import the icons from lucide-react
 import './Dashboard.css' // Assuming styles are in a separate CSS file
 
 const Schedule = () => {
   return (
     <>
-    
       <div className='dashboard-container'>
         {/* Sidebar Section */}
         <div className='sidebar-1'>
@@ -36,13 +36,13 @@ const Schedule = () => {
           <div className='quick-add-section'>
             <h3>Quick Add</h3>
             <button className='quick-add-btn match-btn'>
-              🏆 Schedule Match
+              <Clipboard size={20} className='ic' /> Schedule Match
             </button>
             <button className='quick-add-btn practice-btn'>
-              🛠️ Schedule Practice
+              <PlusCircle size={20} className='ic' /> Schedule Practice
             </button>
             <button className='quick-add-btn meeting-btn'>
-              👤 Schedule Meeting
+              <Presentation size={20} className='ic' /> Schedule Meeting
             </button>
           </div>
         </div>
@@ -57,6 +57,8 @@ const Schedule = () => {
           </div>
         </div>
       </div>
+
+      
     </>
   )
 }

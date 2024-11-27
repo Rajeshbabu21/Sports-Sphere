@@ -21,8 +21,8 @@ const CreateTeamPage = () => {
         throw new Error('Failed to create team')
       }
 
-      // Navigate back to the FindTeamPage
-      navigate('/')
+      
+      navigate('/manageteam')
     } catch (err) {
       console.error('Error creating team:', err)
     }

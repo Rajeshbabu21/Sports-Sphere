@@ -20,16 +20,18 @@ const Navbar = () => {
     <div className='w-full fixed top-0 left-0 z-50 bg-darkGray text-white p-5 border-b-[1px] border-customColor '>
       <nav className='flex justify-between items-center'>
         {/* Logo and Title Section */}
-        <div className='flex items-center'>
-          <img
-            src={Logo}
-            alt='Logo'
-            className='h-[60px] w-[60px] mr-3 rounded-full'
-          />
-          <span className='font-bold text-xl text-[rgb(203,153,81)]'>
-            Sports Sphere
-          </span>
-        </div>
+        <Link to='/maincontent'>
+          <div className='flex items-center'>
+            <img
+              src={Logo}
+              alt='Logo'
+              className='h-[60px] w-[60px] mr-3 rounded-full'
+            />
+            <span className='font-bold text-xl text-[rgb(203,153,81)]'>
+              Sports Sphere
+            </span>
+          </div>
+        </Link>
 
         {/* Hamburger Icon for Mobile */}
         <button
@@ -111,7 +113,7 @@ const Navbar = () => {
             </div>
           </Link>
 
-          <Link to='/logout' className='hover:text-[rgb(56,186,244)]'>
+          <Link to='/login' className='hover:text-[rgb(56,186,244)]'>
             Logout
           </Link>
         </div>
@@ -148,10 +150,10 @@ const Navbar = () => {
         </div>
 
         {/* User Profile and Logout in Mobile */}
-        <div className='flex items-center justify-between'>
-          <div className='flex items-center'>
+        <div className='flex items-center justify-between '>
+          <div className='flex items-center rounded-full'>
             <img
-              className='w-8 h-8 rounded-full'
+              className='w-8 h-8  rounded-full'
               src={profileImage}
               alt='User'
             />

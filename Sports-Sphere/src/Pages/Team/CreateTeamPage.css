@@ -10,6 +10,10 @@
   /* background: linear-gradient(135deg, #007bff, #0056b3); Attractive gradient */
 }
 
+body{
+  background-color:#FAF6E3 ;
+}
+
 .cen {
   padding-top: 9rem; /* Reduced for better visual balance */
 }
